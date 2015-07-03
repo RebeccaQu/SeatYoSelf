@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20150702214839) do
 
-  create_table "reservations", force: :cascade do |t|
+  create_table "Reservations", force: :cascade do |t|
     t.datetime "date_time"
     t.integer  "party_size"
     t.integer  "user_id"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20150702214839) do
     t.datetime "updated_at",    null: false
   end
 
-  create_table "restaurants", force: :cascade do |t|
+  create_table "Restaurants", force: :cascade do |t|
     t.string   "name"
     t.integer  "price_range"
     t.string   "address"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20150702214839) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "Users", force: :cascade do |t|
     t.string   "firstname"
     t.string   "lastname"
     t.string   "email"
