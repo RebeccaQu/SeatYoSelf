@@ -1,0 +1,32 @@
+Seat Yourself User Stories
+
+As a User, I want to be able to...
+
+Need to have:
+1. Make a reservation: date, time, party size, restaurant, user
+2. Date - no restrictions
+3. Time - 11am to 8pm
+4. Party Size - 2 to 20 people
+5. restaurant capacity (100 people)
+6. customer login
+7. see all reservations when logged in
+8. email confirmation/confirmation page
+9. See a directory of restaurants available
+10. When I click on a restaurant, I want to see: address, neighbourhood, price range, summary, menu, list of available timeslots
+
+
+Nice to have: 
+1. View restaurants based on cuisine category
+
+Happy to have: 
+1. loyalty points
+
+As the restaurant Owner...
+
+Need to have: 
+1. I want to see a list of the week's reservation
+
+Happy to have: 
+1. customer loyalty points
+
+
