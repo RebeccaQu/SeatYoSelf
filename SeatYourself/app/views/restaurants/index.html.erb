@@ -16,7 +16,7 @@
         <td><%= r.name %></td>
         <td><%= r.address %></td>
         <td><%= r.price_range %></td>
-        <td><%= link_to "RESERVE", @restaurants_url %></td> <!--WHY DOES THIS WORK??????-->
+        <td><%= link_to "RESERVE", restaurant_path(r.id) %></td> 
       </tr>
 
     <% end %>
