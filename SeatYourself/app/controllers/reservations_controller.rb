@@ -1,14 +1,16 @@
 class ReservationsController < ApplicationController
+
   def index
   end
 
-  def new
-    @reservations = Reservation.new
-  end
-
   def create
-    @reservations = Reservation.new
-    @reservations.save
+    @reservation = Reservation.new(reservation_params)
+    
+    if @reservation.save 
+       render 'create'
+    else
+      render '/restaurants/show'
+    end
   end
 
   def show
@@ -19,4 +21,10 @@ class ReservationsController < ApplicationController
     @reservations = Reservation.find(params[:id])
     @reservations.destroy
   end
+
+  private
+  def reservation_params
+    params.require(:reservation).permit(:party_size , :date_time)
+  end
+
 end
