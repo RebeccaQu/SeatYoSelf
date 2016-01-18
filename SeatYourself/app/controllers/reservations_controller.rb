@@ -4,7 +4,11 @@ class ReservationsController < ApplicationController
   end
 
   def create
-    @reservation = Reservation.new(reservation_params)
+    @restaurant = Restaurant.find(params[:restaurant_id])
+    
+      @reservation = Reservation.new(reservation_params)
+      @reservation.user_id = session[:user_id]
+      @reservation.restaurant_id = params[:restaurant_id]
     
     if @reservation.save 
        render 'create'

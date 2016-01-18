@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150705192842) do
+ActiveRecord::Schema.define(version: 20150707184245) do
 
   create_table "reservations", force: :cascade do |t|
     t.datetime "date_time"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20150705192842) do
     t.text     "summary"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "capacity"
   end
 
   create_table "users", force: :cascade do |t|
